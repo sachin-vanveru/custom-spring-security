@@ -11,13 +11,18 @@ public class HomeController {
 	@RequestMapping("/home")
 	public ModelAndView home() {
 //		ModelAndView mv = new ModelAndView("index.html");
-		return new ModelAndView("index.html");
+		return new ModelAndView("/index");
+	}
+	
+	@RequestMapping("/login")
+	public ModelAndView mv() {
+		return new ModelAndView("/login");
 	}
 	
 	@RequestMapping("/")
 	public ModelAndView index() {
 //		ModelAndView mv = new ModelAndView("index.html");
-		return new ModelAndView("index.html");
+		return new ModelAndView("/index");
 	}
 	
 }

@@ -15,6 +15,7 @@ public class MyUserDetails implements UserDetails {
 
 	private Users user;
 	public MyUserDetails(Users user) {
+		System.out.println("--------Step 2--------");
 		this.user=user;
 	}
 
